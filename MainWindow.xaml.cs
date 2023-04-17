@@ -20,6 +20,9 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        float firstNumber, secondNumber;
+        int operators = -1;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -93,6 +96,41 @@ namespace Calculator
             if (txtNumber.Text == "0")
                 txtNumber.Text = "";
             txtNumber.Text = txtNumber.Text + "9";
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 0;
+        }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 1;
+        }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 2;
+        }
+
+        private void btnDivide_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = Convert.ToSingle(txtNumber.Text);
+            txtNumber.Text = "0";
+            operators = 3;
+        }
+
+        private void btnEqual_Click(object sender, RoutedEventArgs e)
+        {
+            secondNumber = Convert.ToSingle(txtNumber.Text);
+
+
         }
     }
 }
