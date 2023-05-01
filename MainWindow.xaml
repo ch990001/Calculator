@@ -21,7 +21,7 @@
         <Button x:Name="btnTwo" Content="2" HorizontalAlignment="Left" Margin="228,236,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnTwo_Click"/>
         <Button x:Name="btnThree" Content="3" HorizontalAlignment="Left" Margin="339,236,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnThree_Click"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="445,236,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnMinus_Click"/>
-        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="124,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20"/>
+        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="124,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnDot_Click"/>
         <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="228,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnZero_Click"/>
         <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="339,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnEqual_Click"/>
         <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="445,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnAdd_Click"/>

@@ -126,11 +126,46 @@ namespace Calculator
             operators = 3;
         }
 
+        private void btnDot_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtNumber.Text.IndexOf(".") == -1)
+                txtNumber.Text = txtNumber.Text + ".";
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            txtNumber.Text = "0";
+            firstNumber = 0f;
+            secondNumber = 0f;
+            operators = -1;
+        }
+
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
-            secondNumber = Convert.ToSingle(txtNumber.Text);
+            float finalResults = 0f; 
+            secondNumber = Convert.ToSingle(txtNumber.Text); 
 
+            switch (operators)
+            {
+                case 0:
+                    finalResults = firstNumber + secondNumber;
+                    break;
+                case 1:
+                    finalResults = firstNumber - secondNumber;
+                    break;
+                case 2:
+                    finalResults = firstNumber * secondNumber;
+                    break;
+                case 3:
+                    finalResults = firstNumber / secondNumber;
+                    break;
+            }
 
+            txtNumber.Text = string.Format("{0:0.##########}", finalResults); 
+
+            firstNumber = 0f;
+            secondNumber = 0f;
+            operators = -1;
         }
     }
 }
