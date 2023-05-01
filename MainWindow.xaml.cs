@@ -107,7 +107,7 @@ namespace Calculator
 
         private void Select_Operator(int _operator)
         {
-            firstNumber = Convert.ToSingle(txtNumber.Text);
+            firstNumber = Convert.ToSingle(txtNumber.Text); 
             txtNumber.Text = "0";
             operators = _operator;
         }
