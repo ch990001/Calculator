@@ -25,8 +25,8 @@
         <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="230,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnZero_Click"/>
         <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="339,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnEqual_Click"/>
         <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="445,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="20" Click="btnAdd_Click"/>
-        <Button x:Name="btnBank" Content="&lt;--" HorizontalAlignment="Left" Margin="19,172,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="18"/>
-        <Button x:Name="btnPCT" Content="%" HorizontalAlignment="Left" Margin="19,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="18"/>
+        <Button x:Name="btnBank" Content="&lt;--" HorizontalAlignment="Left" Margin="19,172,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="18" Click="btnBank_Click"/>
+        <Button x:Name="btnPCT" Content="%" HorizontalAlignment="Left" Margin="19,302,0,0" VerticalAlignment="Top" Height="35" Width="68" FontSize="18" Click="btnPCT_Click"/>
 
     </Grid>
 </Window>
