@@ -105,6 +105,18 @@ namespace Calculator
             Select_Operator(3);
         }
 
+        private void btnPCT_Click(object sender, RoutedEventArgs e)
+        {
+            float finalResults = 0f;
+            secondNumber = Convert.ToSingle(txtNumber.Text);
+
+            finalResults = secondNumber / 100;
+
+            Add_Number("%");
+
+            txtNumber.Text = string.Format("{0:0.##########}", finalResults);
+        }
+
         private void Select_Operator(int _operator)
         {
             firstNumber = Convert.ToSingle(txtNumber.Text); 
@@ -124,18 +136,6 @@ namespace Calculator
             firstNumber = 0f;
             secondNumber = 0f;
             operators = -1;
-        }
-
-        private void btnPCT_Click(object sender, RoutedEventArgs e)
-        {
-            float finalResults = 0f;
-            secondNumber = Convert.ToSingle(txtNumber.Text);
-
-            finalResults = secondNumber/100;
-
-            Add_Number("%");
-
-            txtNumber.Text = string.Format("{0:0.##########}", finalResults);
         }
 
         private void btnBank_Click(object sender, RoutedEventArgs e)
